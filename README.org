@@ -1,0 +1,10 @@
+* Sed Track Demos
+
+This repository contains some demos with solutions and test cases from existing exercises
+
+To test these demos just clone this repository and, for each directory, run:
+
+#+BEGIN_SRC bash :results none
+  cd <directory-name>
+  bats test-*.bats
+#+END_SRC
