@@ -1,10 +1,18 @@
 * Sed Track Demos
 
-This repository contains some demos with solutions and test cases from existing exercises
+This repository contains some demos with solutions and test cases from existing exercises.
+
+Those demos use /GNU Sed extensions/ and /ERE - Extended Regular Expression/ to use full capabilities and less escapes ("~\~") in /regexps/.
 
 To test these demos just clone this repository and, for each directory, run:
 
 #+BEGIN_SRC bash :results none
   cd <directory-name>
   bats test-*.bats
+#+END_SRC
+
+Alternatively, you can check solution with the script
+
+#+BEGIN_SRC bash :results output
+  ./test_them_all.sh
 #+END_SRC
