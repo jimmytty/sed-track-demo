@@ -37,7 +37,6 @@ load bats-extra
     assert_output 'UGCACCAGAAUU'
 }
 
-
 @test 'it validates dna strands' {
     run sed -E -f rna-transcription.sed <<< 'XCGFGGTDTTAA'
     assert_failure
