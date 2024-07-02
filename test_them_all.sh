@@ -3,7 +3,7 @@
 while read dir; do
     (
         cd $dir
-        bats test-$dir.bats | grep -q '^not ok' && tests='FAIL' || tests='OK'
+        bats test-$dir.bats | grep -m1 -q '^not ok' && tests='FAIL' || tests='OK'
         echo "$dir .... $tests"
     )
 done < <(
